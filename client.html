@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>준오와 함꼐하는 웹채팅 !!</title>
+	<meta charset="UTF-8">
+	<script src="client.js"></script>
+</head>
+<body>
+<input type="text" id="nick" placeholder="닉치고 접속 누르셈"><button onclick="createSo();">접속</button>
+<div id='chat' style="border: 1px solid green; width: 300px; height: 300px; overflow-y: scroll; word-break: break-all">
+	
+</div>
+<input type="text" id="msg" onkeyup="key(event.keyCode);" placeholder = "최대 40자">
+<button onclick="sendMessage();">전송</button>&nbsp;&nbsp;<button onclick="conn.close();">접속해제</button>
+</body>
+</html>
